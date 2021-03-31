@@ -1,14 +1,19 @@
 <template>
   <header>
     <div class="container">
-
+      <Navigation></Navigation>
     </div>
   </header>
 </template>
 
 <script>
+import Navigation from "./Navigation";
+
 export default {
-  name: "Header"
+  name: "Header",
+  components: {
+    Navigation
+  }
 }
 </script>
 
