@@ -29,6 +29,7 @@ export default {
 <style scoped lang="scss">
 .b-navigation {
   padding: 30px 0 30px 0;
+  border-bottom: 1px solid #828282;
 
   ul {
     list-style-type: none;
