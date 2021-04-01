@@ -1,14 +1,12 @@
 <template>
-  <h1 class="b-name">
-    Ilia
-    <br>
-    Evsikov
-  </h1>
+  <div class="b-mainPhoto">
+
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Name"
+  name: "MainPhoto"
 }
 </script>
 
@@ -16,11 +14,9 @@ export default {
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
 
-.b-name {
-  font-family: Gilroy, serif;
-  font-size: 47.3392px;
-  line-height: 59px;
-  color: #070707;
-  text-align: left;
+.b-mainPhoto {
+  height: 400px;
+  background: url("../../assets/Photosss.jpg") no-repeat center;
+  background-size: cover;
 }
 </style>

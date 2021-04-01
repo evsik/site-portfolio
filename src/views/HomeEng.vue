@@ -1,17 +1,21 @@
 <template>
   <v-content>
     <Header id="header"/>
-<!--    <SectionTwo id="section-two"/>-->
-<!--    <SectionThree id="section-three"/>-->
+    <Slider id="slider"/>
+    <!--    <SectionTwo id="section-two"/>-->
+    <!--    <SectionThree id="section-three"/>-->
   </v-content>
 </template>
 
 <script>
 import Header from "../components/Header/Header";
+import Slider from "../components/Slider/Slider";
+
 export default {
-  name: "Home",
+  name: "HomeEng",
   components: {
-    Header
+    Header,
+    Slider
   }
 }
 </script>

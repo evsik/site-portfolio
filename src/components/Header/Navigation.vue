@@ -48,6 +48,10 @@ export default {
         color: #828282;
         font-family: Gilroy, serif;
         font-weight: 400;
+
+        &:hover {
+          color: black;
+        }
       }
     }
   }

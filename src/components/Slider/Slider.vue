@@ -1,8 +1,12 @@
 <template>
   <div class="b-slider">
     <div class="container">
-      <Name></Name>
-      <Info></Info>
+      <div class="b-slider__nav">
+        <Name></Name>
+        <Info></Info>
+        <Lang></Lang>
+      </div>
+      <MainPhoto></MainPhoto>
     </div>
   </div>
 </template>
@@ -10,12 +14,16 @@
 <script>
 import Name from "./Name";
 import Info from "./Info";
+import Lang from "./Lang";
+import MainPhoto from "./MainPhoto";
 
 export default {
   name: "Slider",
   components: {
     Name,
-    Info
+    Info,
+    Lang,
+    MainPhoto
   }
 }
 </script>
@@ -25,8 +33,16 @@ export default {
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
 
 .b-slider {
-  display: flex;
-  justify-content: space-between;
   padding: 30px 0 30px 0;
+
+  .container {
+
+    .b-slider__nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: end;
+      padding-bottom: 30px;
+    }
+  }
 }
 </style>

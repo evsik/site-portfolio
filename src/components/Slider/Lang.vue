@@ -2,10 +2,11 @@
   <nav class="b-lang">
     <ul>
       <li class="b-lang__list">
-        <router-link to="/ru" class="b-lang__router-link">RU</router-link>
+        <router-link to="/" class="b-lang__router-link">ENG</router-link>
       </li>
+      <hr>
       <li class="b-lang__list">
-        <router-link to="/eng" class="b-lang__router-link">ENG</router-link>
+        <router-link to="/ru" class="b-lang__router-link">RU</router-link>
       </li>
     </ul>
   </nav>
@@ -22,33 +23,29 @@ export default {
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
 
 .b-lang {
-  transform: rotate(-90deg);
+  justify-self: end;
 
   ul {
-
+    list-style-type: none;
 
     .b-lang__list {
-
+      transform: rotate(-90deg);
 
       .b-lang__router-link {
         font-family: Gilroy, serif;
         font-size: 16px;
         line-height: 20px;
-
+        text-decoration: none;
         color: #828282;
+
+        &:hover {
+          color: black;
+        }
 
         &.router-link-exact-active {
           color: black;
         }
       }
-    }
-  }
-
-  a {
-
-
-    &.router-link-exact-active {
-      color: #42b983;
     }
   }
 }
