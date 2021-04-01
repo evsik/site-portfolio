@@ -13,6 +13,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+
 .b-name {
   font-family: Gilroy, serif;
   font-size: 47.3392px;

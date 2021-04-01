@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+
 .b-navigation {
   padding: 30px 0 30px 0;
   border-bottom: 1px solid #828282;
