@@ -2,6 +2,8 @@
   <v-content>
     <Header id="header"/>
     <Slider id="slider"/>
+    <AboutMe id="aboutMe"/>
+
     <!--    <SectionTwo id="section-two"/>-->
     <!--    <SectionThree id="section-three"/>-->
   </v-content>
@@ -10,12 +12,14 @@
 <script>
 import Header from "../components/Header/Header";
 import Slider from "../components/Slider/Slider";
+import AboutMe from "../components/AboutMe/AboutMe";
 
 export default {
   name: "HomeEng",
   components: {
     Header,
-    Slider
+    Slider,
+    AboutMe
   }
 }
 </script>

@@ -33,7 +33,7 @@ export default {
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
 
 .b-slider {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 100px 0;
 
   .container {
 
