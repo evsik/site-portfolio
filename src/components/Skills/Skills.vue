@@ -1,19 +1,34 @@
 <template>
   <div class="b-skills">
     <div class="container">
-      <h2 class="b-skills__head">
-        Skills
-      </h2>
-      <p class="b-skills__text">
-        I work in such programs as:
-      </p>
+      <div>
+        <h2 class="b-skills__head">
+          Skills
+        </h2>
+        <p class="b-skills__text">
+          I work in such programs as:
+        </p>
+      </div>
+      <Item
+          v-for="item of this.$store.state.dataArr"
+          :item="item"
+          :key="item.id_skills"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import Item from "./Item";
+
 export default {
-  name: "Skills"
+  name: "Skills",
+  components: {
+    Item
+  },
+  mounted() {
+    this.$store.commit('getData')
+  }
 }
 </script>
 

@@ -2,41 +2,49 @@
   {
     "id_skills": 1,
     "name_skills": "HTML",
-    "img_skills": "<i class=\"fab fa-html5\"></i>"
+    "img_skills": "fab fa-html5",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i>"
   },
   {
     "id_skills": 2,
     "name_skills": "CSS",
-    "img_skills": "<i class=\"fab fa-css3-alt\"></i>"
+    "img_skills": "fab fa-css3-alt",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i>"
   },
   {
     "id_skills": 3,
     "name_skills": "JavaScript",
-    "img_skills": "<i class=\"fab fa-js\"></i>"
+    "img_skills": "fab fa-js",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"far fa-star\"></i> <i class=\"fas fa-star-half-alt\"></i>"
   },
   {
     "id_skills": 4,
     "name_skills": "SCSS",
-    "img_skills": "<i class=\"fab fa-sass\"></i>"
+    "img_skills": "fab fa-sass",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star-half-alt\"></i>"
   },
   {
     "id_skills": 5,
     "name_skills": "Bootstrap",
-    "img_skills": "<i class=\"fab fa-bootstrap\"></i>"
+    "img_skills": "fab fa-bootstrap",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"far fa-star\"></i>"
   },
   {
     "id_skills": 6,
     "name_skills": "Node,js",
-    "img_skills": "<i class=\"fab fa-node\"></i>"
+    "img_skills": "fab fa-node",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"far fa-star\"></i> <i class=\"far fa-star\"></i>"
   },
   {
     "id_skills": 7,
     "name_skills": "Vue2",
-    "img_skills": "<i class=\"fab fa-vuejs\"></i>"
+    "img_skills": "fab fa-vuejs",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"far fa-star\"></i>"
   },
   {
     "id_skills": 8,
     "name_skills": "Figma",
-    "img_skills": "<i class=\"fab fa-figma\"></i>"
+    "img_skills": "fab fa-figma",
+    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"far fa-star\"></i> <i class=\"far fa-star\"></i>"
   }
 ]
