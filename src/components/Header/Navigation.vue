@@ -2,10 +2,10 @@
   <nav class="b-navigation">
     <ul>
       <li class="b-navigation__list">
-        <router-link to="/" v-scroll-to="'#header'" class="router-link">Home</router-link>
+        <router-link to="#" v-scroll-to="'#header'" class="router-link">Home</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/about" class="router-link">About me</router-link>
+        <router-link to="#" v-scroll-to="'#aboutMe'" class="router-link">About me</router-link>
       </li>
       <li class="b-navigation__list">
         <router-link to="/skills" class="router-link">Skills</router-link>
