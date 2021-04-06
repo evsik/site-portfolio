@@ -2,25 +2,21 @@
   {
     "id_skills": 1,
     "name_skills": "HTML",
-    "img_skills": "fab fa-html5",
-    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i>"
+    "class_skills": "fab fa-html5"
   },
   {
     "id_skills": 2,
     "name_skills": "CSS",
-    "img_skills": "fab fa-css3-alt",
-    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i>"
+    "class_skills": "fab fa-css3-alt"
   },
   {
     "id_skills": 3,
     "name_skills": "JavaScript",
-    "img_skills": "fab fa-js",
-    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"far fa-star\"></i> <i class=\"fas fa-star-half-alt\"></i>"
+    "class_skills": "fab fa-js"
   },
   {
     "id_skills": 4,
     "name_skills": "SCSS",
-    "img_skills": "fab fa-sass",
-    "star_skills": "<i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star\"></i> <i class=\"fas fa-star-half-alt\"></i>"
+    "class_skills": "fab fa-sass"
   }
 ]

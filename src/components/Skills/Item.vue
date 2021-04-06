@@ -4,9 +4,6 @@
     <h4 class="b-skill__name">
       {{ item.name_skills }}
     </h4>
-    <div class="b-skill__star">
-      {{ item.star_skills }}
-    </div>
   </div>
 </template>
 
