@@ -11,6 +11,10 @@
     min-height: 100vh;
 }
 
+.container {
+    max-width: 960px !important;
+}
+
 main {
     flex-grow: 1;
 }

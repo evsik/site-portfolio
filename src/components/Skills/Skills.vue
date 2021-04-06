@@ -64,6 +64,7 @@ export default {
         text-align: center;
         color: #070707;
         margin-bottom: 60px;
+        font-weight: 600;
       }
 
       .b-skills__text {

@@ -4,6 +4,7 @@
     <Slider id="slider"/>
     <AboutMe id="aboutMe"/>
     <Skills id="skills"/>
+    <Portfolio id="portfolio"/>
 
 
     <!--    <SectionTwo id="section-two"/>-->
@@ -16,6 +17,7 @@ import Header from "../components/Header/Header";
 import Slider from "../components/Slider/Slider";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Skills from "../components/Skills/Skills";
+import Portfolio from "../components/Portfolio/Portfolio";
 
 export default {
   name: "HomeEng",
@@ -23,7 +25,8 @@ export default {
     Header,
     Slider,
     AboutMe,
-    Skills
+    Skills,
+    Portfolio
   }
 }
 </script>
