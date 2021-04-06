@@ -16,7 +16,27 @@
   },
   {
     "id_skills": 4,
+    "name_skills": "Vue2",
+    "img_skills": "fab fa-vuejs"
+  },
+  {
+    "id_skills": 5,
+    "name_skills": "Bootstrap",
+    "img_skills": "fab fa-bootstrap"
+  },
+  {
+    "id_skills": 6,
+    "name_skills": "Node,js",
+    "img_skills": "fab fa-node"
+  },
+  {
+    "id_skills": 7,
     "name_skills": "SCSS",
     "class_skills": "fab fa-sass"
+  },
+  {
+    "id_skills": 8,
+    "name_skills": "Figma",
+    "img_skills": "fab fa-figma"
   }
 ]
