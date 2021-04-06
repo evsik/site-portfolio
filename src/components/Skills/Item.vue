@@ -21,6 +21,34 @@ export default {
 
 .b-skill {
 
+  .fa-html5 {
+    color: #dd4b24;
+  }
+
+  .fa-css3-alt {
+    color: #3595cf;
+  }
+
+  .fa-js {
+    color: #f7df1e;
+  }
+
+  .fa-vuejs {
+    color: #3fb27f;
+  }
+
+  .fa-bootstrap {
+    color: #533b78;
+  }
+
+  .fa-node {
+    color: #7fc727;
+  }
+
+  .fa-sass {
+    color: #c96195;
+  }
+
   i {
     font-size: 80px;
     margin-bottom: 20px;
