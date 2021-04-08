@@ -8,13 +8,13 @@
         <router-link to="#" v-scroll-to="'#aboutMe'" class="router-link">About me</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/skills" class="router-link">Skills</router-link>
+        <router-link to="#" v-scroll-to="'#skills'" class="router-link">Skills</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/portfolio" class="router-link">Portfolio</router-link>
+        <router-link to="#" v-scroll-to="'#portfolio'" class="router-link">Portfolio</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/contacts" class="router-link">Contacts</router-link>
+        <router-link to="#" v-scroll-to="'#footer'" class="router-link">Contacts</router-link>
       </li>
     </ul>
   </nav>
