@@ -14,7 +14,9 @@
 
 <script>
 export default {
-  name: "Lang"
+  name: "Lang",
+
+  methods: {}
 }
 </script>
 

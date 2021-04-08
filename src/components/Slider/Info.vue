@@ -1,14 +1,27 @@
 <template>
-  <p class="b-briefInfo">
-    Front-end Developer
-    <br>
-    27 years old, Moscow
+  <p class="b-briefInfo" v-html="path ? text : textRu">
+
   </p>
 </template>
 
 <script>
 export default {
-  name: "Info"
+  name: "Info",
+  data() {
+    return {
+      path: this.$route.path === '/',
+      text: `
+        Front-end Developer
+        <br>
+        27 years old, Moscow
+      `,
+      textRu: `
+        Фронт-энд разработчик
+        <br>
+        27 лет, Москва
+      `,
+    }
+  }
 }
 </script>
 

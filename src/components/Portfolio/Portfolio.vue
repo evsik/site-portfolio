@@ -35,6 +35,8 @@ export default {
     return {
       isActiveMore: false,
     }
+  },
+  methods: {
   }
 }
 </script>
@@ -73,7 +75,7 @@ export default {
       color: #070707;
       margin-bottom: 60px;
       font-weight: 300;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
       text-decoration: none;
       transition: 1s;
 

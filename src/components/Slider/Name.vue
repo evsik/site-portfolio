@@ -1,14 +1,27 @@
 <template>
-  <h1 class="b-name">
-    Ilia
-    <br>
-    Evsikov
+  <h1 class="b-name" v-html="path ? text : textRu">
+
   </h1>
 </template>
 
 <script>
 export default {
-  name: "Name"
+  name: "Name",
+  data() {
+    return {
+      path: this.$route.path === '/',
+      text: `
+        Ilia
+        <br>
+        Evsikov
+      `,
+      textRu: `
+        Илья
+        <br>
+        Евсиков
+      `,
+    }
+  }
 }
 </script>
 
