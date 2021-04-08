@@ -2,13 +2,11 @@
   <footer class="b-footer">
     <div class="container">
       <div class="b-footer__textWrapper">
-        <h2 class="b-footer__head">
-          Contacts
+        <h2 class="b-footer__head" v-html="path ? head : headRu">
+
         </h2>
-        <p class="b-footer__text">
-          Want to know more or just chat?
-          <br>
-          You are welcome!
+        <p class="b-footer__text" v-html="path ? text : textRu">
+
         </p>
         <Button></Button>
       </div>
@@ -19,10 +17,7 @@
             :social="social"
         />
       </div>
-      <p class="b-footer__runningTitle">
-        Like me on
-        <br>
-        LinkedIn, Facebook, Telegram, Github
+      <p class="b-footer__runningTitle" v-html="path ? runningTitle : runningTitleRu">
       </p>
     </div>
   </footer>
@@ -40,9 +35,31 @@ export default {
   },
   data() {
     return {
-      isActive: false,
+      path: this.$route.path === '/',
+      runningTitle: `
+              Contact me on
+             <br>
+              LinkedIn, Facebook, Telegram, Github
+      `,
+      runningTitleRu: `
+              Свяжитесь со мной в
+             <br>
+              LinkedIn, Facebook, Telegram, Github
+      `,
+      head: `Contacts`,
+      headRu: `Контакты`,
+      text: `
+                Want to know more or just chat?
+                <br>
+                You are welcome!
+      `,
+      textRu: `
+      Хотите узнать больше или просто пообщаться?
+        <br>
+      Добро пожаловать!
+      `,
     }
-  }
+  },
 }
 </script>
 

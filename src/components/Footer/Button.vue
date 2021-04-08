@@ -1,10 +1,17 @@
 <template>
-  <a href="mailto:evsevsikov@gmail.com" class="pulsate-fwd b-btnSendMsg">Send message</a>
+  <a href="mailto:evsevsikov@gmail.com" class="pulsate-fwd b-btnSendMsg" v-html="path ? text : textRu"></a>
 </template>
 
 <script>
 export default {
-  name: "Button"
+  name: "Button",
+  data() {
+    return {
+      path: this.$route.path === '/',
+      text: `Send message`,
+      textRu: `Связаться`,
+    }
+  },
 }
 </script>
 
