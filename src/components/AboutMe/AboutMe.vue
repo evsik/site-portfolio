@@ -1,10 +1,23 @@
 <template>
   <div class="b-aboutMe">
     <div class="container">
-      <h2 class="b-aboutMe__head">
-        About me
+      <h2 class="b-aboutMe__head" v-html="path ? head : headRu">
+
       </h2>
-      <p class="b-aboutMe__text">
+      <p class="b-aboutMe__text" v-html="path ? text : textRu">
+
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "AboutMe",
+  data() {
+    return {
+      path: this.$route.path === '/',
+      text: `
         Hi, I'm Ilya – Front-end Developer from Moscow. <br>
         I'm interested in Front-end, design and everything connected with it.
         <br>
@@ -15,14 +28,23 @@
         <br>
         Ready to implement excellent projects <br>
         with wonderful people.
-      </p>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "AboutMe"
+      `,
+      textRu: `
+        Привет, меня зовут Илья – Фронт-энд разработчик из Москвы. <br>
+        Меня интересует Фронт-энд, дизайн и все, что с ним связано.
+        <br>
+        <br>
+        Я учился на курсах "Фронт-энд разработчик" <br>
+        в GeekBrains-Академии.
+        <br>
+        <br>
+        Готов реализовывать отличные проекты<br>
+        с замечательными людьми.
+      `,
+      head: `About me`,
+      headRu: `О себе`,
+    }
+  }
 }
 </script>
 
