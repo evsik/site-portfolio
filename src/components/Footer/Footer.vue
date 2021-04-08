@@ -12,17 +12,31 @@
         </p>
         <Button></Button>
       </div>
+      <div class="b-socialBlock">
+        <Social
+            v-for="social of $store.state.socials"
+            :key="social.title"
+            :social="social"
+        />
+      </div>
+      <p class="b-footer__runningTitle">
+        Like me on
+        <br>
+        LinkedIn, Facebook, Telegram, Github
+      </p>
     </div>
   </footer>
 </template>
 
 <script>
 import Button from "./Button";
+import Social from "./Social";
 
 export default {
   name: "Footer",
   components: {
-    Button
+    Button,
+    Social
   },
   data() {
     return {
@@ -60,7 +74,20 @@ export default {
         margin-bottom: 40px;
       }
     }
+
+    .b-socialBlock {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 40px;
+    }
   }
 }
 
+.b-footer__runningTitle {
+  font-family: Gilroy, serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
 </style>

@@ -24,6 +24,28 @@ export default new Vuex.Store({
                 title: 'Top-3D-Group landing - Homepage',
                 workLink: 'https://github.com/evsik/TZ_for_Top-3D-Group'
             }
+        ],
+        socials: [
+            {
+                title: 'linkedin',
+                class: 'fab fa-linkedin',
+                link: 'http://www.linkedin.com/in/evsevsikov'
+            },
+            {
+                title: 'facebook',
+                class: 'fab fa-facebook-square',
+                link: 'https://www.facebook.com/evsevsikov/'
+            },
+            {
+                title: 'telegram',
+                class: 'fab fa-telegram-plane',
+                link: 'https://t.me/evsik_s'
+            },
+            {
+                title: 'github',
+                class: 'fab fa-github-square',
+                link: 'https://github.com/evsik'
+            }
         ]
     },
     mutations: {
