@@ -2,19 +2,19 @@
   <nav class="b-navigation">
     <ul>
       <li class="b-navigation__list">
-        <router-link to="/" v-scroll-to="'#header'" class="router-link">Home</router-link>
+        <router-link to="" v-scroll-to="'#header'" class="router-link">Home</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/" v-scroll-to="'#aboutMe'" class="router-link">About me</router-link>
+        <router-link to="" v-scroll-to="'#aboutMe'" class="router-link">About me</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/" v-scroll-to="'#skills'" class="router-link">Skills</router-link>
+        <router-link to="" v-scroll-to="'#skills'" class="router-link">Skills</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/" v-scroll-to="'#portfolio'" class="router-link">Portfolio</router-link>
+        <router-link to="" v-scroll-to="'#portfolio'" class="router-link">Portfolio</router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="/" v-scroll-to="'#footer'" class="router-link">Contacts</router-link>
+        <router-link to="" v-scroll-to="'#footer'" class="router-link">Contacts</router-link>
       </li>
     </ul>
   </nav>

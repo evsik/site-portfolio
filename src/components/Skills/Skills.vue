@@ -2,11 +2,9 @@
   <div class="b-skills">
     <div class="container">
       <div class="b-skills__textWrapper">
-        <h2 class="b-skills__head">
-          Skills
+        <h2 class="b-skills__head" v-html="path ? head : headRu">
         </h2>
-        <p class="b-skills__text">
-          I work in such programs as:
+        <p class="b-skills__text" v-html="path ? text : textRu">ё
         </p>
       </div>
       <div class="b-skillsBlock multiple-items">
@@ -27,7 +25,17 @@ import $ from "jquery"
 export default {
   name: "Skills",
   data() {
-    return {}
+    return {
+      path: this.$route.path === '/',
+      text: `
+         I use a stack of technologies such as:
+      `,
+      textRu: `
+          Я использую стек технологий:
+      `,
+      head: `Skills`,
+      headRu: `Навыки`,
+    }
   },
   components: {
     Item

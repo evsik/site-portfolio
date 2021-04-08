@@ -2,8 +2,7 @@
   <div class="b-portfolio">
     <div class="container">
       <div class="b-portfolio__textWrapper">
-        <h2 class="b-portfolio__head">
-          Portfolio
+        <h2 class="b-portfolio__head" v-html="path ? head : headRu">
         </h2>
       </div>
       <div class="b-portfolio__works">
@@ -14,7 +13,7 @@
         />
       </div>
       <a href="https://github.com/evsik" class="b-moreLink" @click="isActiveMore = true"
-         :class="{ trackingOutExpand: isActiveMore }">
+         :class="{ trackingOutExpand: isActiveMore }" v-html="path ? text : textRu">
         MORE
       </a>
     </div>
@@ -34,10 +33,14 @@ export default {
   data() {
     return {
       isActiveMore: false,
+      path: this.$route.path === '/',
+      head: `Portfolio`,
+      headRu: `Портфолио`,
+      text: `MORE`,
+      textRu: `БОЛЬШЕ РАБОТ`,
     }
   },
-  methods: {
-  }
+  methods: {}
 }
 </script>
 
