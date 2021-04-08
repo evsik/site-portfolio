@@ -13,7 +13,7 @@
             :item="item"
         />
       </div>
-      <a href="https://github.com/evsik" class="b-moreLink"  @click="isActiveMore = true"
+      <a href="https://github.com/evsik" class="b-moreLink" @click="isActiveMore = true"
          :class="{ trackingOutExpand: isActiveMore }">
         MORE
       </a>
@@ -75,9 +75,11 @@ export default {
       font-weight: 300;
       letter-spacing: 10px;
       text-decoration: none;
+      transition: 1s;
 
       &:hover {
-        text-shadow: 1px 1px 15px #f68123;
+        //text-shadow: 1px 1px 15px #f68123;
+        letter-spacing: 20px;
         text-decoration: none;
       }
     }
