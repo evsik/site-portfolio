@@ -47,6 +47,10 @@ export default {
         &.router-link-exact-active {
           color: black;
         }
+
+        @include media-breakpoint-down(xs) {
+          font-size: 14px;
+        }
       }
     }
   }
