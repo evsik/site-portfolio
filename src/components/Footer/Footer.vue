@@ -64,6 +64,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+@import '../../layout/styles/_varText.scss';
 
 .b-footer {
   padding: 100px 0 100px 0;
@@ -73,21 +76,12 @@ export default {
       margin-bottom: 80px;
 
       .b-footer__head {
-        font-family: Gilroy, serif;
-        font-size: 34px;
-        line-height: 42px;
-        text-align: center;
-        color: #070707;
+        @extend %headText;
         margin-bottom: 20px;
-        font-weight: 600;
       }
 
       .b-footer__text {
-        font-family: Gilroy, serif;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        color: #070707;
+        @extend %descText;
         margin-bottom: 40px;
       }
     }

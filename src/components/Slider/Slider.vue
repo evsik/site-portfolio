@@ -42,6 +42,10 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       align-items: end;
       padding-bottom: 30px;
+
+      @include media-breakpoint-down(xs){
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }

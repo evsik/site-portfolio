@@ -35,5 +35,9 @@ export default {
   line-height: 59px;
   color: #070707;
   text-align: left;
+
+  @include media-breakpoint-down(xs) {
+    grid-area: 1/1;
+  }
 }
 </style>

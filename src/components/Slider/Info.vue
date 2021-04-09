@@ -28,11 +28,14 @@ export default {
 <style scoped lang="scss">
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
+@import '../../layout/styles/_varText.scss';
 
 .b-briefInfo {
-  font-family: Gilroy, serif;
-  font-size: 18px;
-  line-height: 22px;
-  color: #070707;
+  @extend %descText;
+
+  @include media-breakpoint-down(xs) {
+    grid-area: 2/1;
+    text-align: left;
+  }
 }
 </style>

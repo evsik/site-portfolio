@@ -57,6 +57,7 @@ export default {
 <style lang="scss">
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
+@import '../../layout/styles/_varText.scss';
 
 .b-skills {
   padding: 100px 0 100px 0;
@@ -66,21 +67,11 @@ export default {
       margin-bottom: 80px;
 
       .b-skills__head {
-        font-family: Gilroy, serif;
-        font-size: 34px;
-        line-height: 42px;
-        text-align: center;
-        color: #070707;
-        margin-bottom: 60px;
-        font-weight: 600;
+        @extend %headText
       }
 
       .b-skills__text {
-        font-family: Gilroy, serif;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        color: #070707;
+        @extend %descText
       }
     }
 

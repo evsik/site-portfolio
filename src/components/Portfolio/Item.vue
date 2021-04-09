@@ -26,6 +26,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+@import '../../layout/styles/_varText.scss';
+
 .b-work {
   margin-bottom: 100px;
 
@@ -39,12 +43,8 @@ export default {
   }
 
   .b-work__link {
-    font-family: Gilroy, serif;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
+    @extend %descText;
     text-decoration-line: underline;
-    color: #070707;
 
     &:hover {
       color: #f68123;

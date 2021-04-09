@@ -51,6 +51,7 @@ export default {
 <style scoped lang="scss">
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
+@import '../../layout/styles/_varText.scss';
 
 .b-aboutMe {
   background-color: #F6F6F6;
@@ -58,22 +59,11 @@ export default {
 
   .container {
     .b-aboutMe__head {
-      font-family: Gilroy, serif;
-      font-size: 34px;
-      line-height: 42px;
-      text-align: center;
-      color: #070707;
-      margin-bottom: 25px;
-      font-weight: 600;
+      @extend %headText
     }
 
     .b-aboutMe__text {
-      font-weight: 400;
-      font-family: Gilroy, serif;
-      font-size: 18px;
-      line-height: 22px;
-      text-align: center;
-      color: #070707;
+      @extend %descText
     }
   }
 }

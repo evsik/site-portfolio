@@ -1,0 +1,25 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+
+%headText {
+  font-family: Gilroy, serif;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+%descText {
+  font-weight: 400;
+  font-family: Gilroy, serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 14px;
+  }
+}
