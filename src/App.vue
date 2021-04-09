@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <router-view/>
+    <ButtonUp/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header/Header";
+import ButtonUp from "./components/ButtonUp/ButtonUp";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    ButtonUp
   },
 }
 </script>
@@ -25,6 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: relative;
 }
 
 //#nav {

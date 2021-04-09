@@ -95,6 +95,16 @@ export default {
 .slick-prev:before, .slick-next:before {
   color: #070707 !important;
   font-size: 40px !important;
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+}
+
+.slick-prev:before {
+  content: "\f053" !important;
+}
+
+.slick-next:before {
+  content: "\f054" !important;
 }
 
 </style>

@@ -2,19 +2,32 @@
   <nav class="b-navigation">
     <ul>
       <li class="b-navigation__list">
-        <router-link to="" v-scroll-to="'#header'" class="router-link">Home</router-link>
+        <router-link to="" v-scroll-to="'#header'" class="router-link">
+          {{ path ? 'Home' : 'Главная' }}
+        </router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="" v-scroll-to="'#aboutMe'" class="router-link">About me</router-link>
+        <router-link to="" v-scroll-to="'#aboutMe'" class="router-link">
+          {{ path ? 'About me' : 'О себе' }}
+        </router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="" v-scroll-to="'#skills'" class="router-link">Skills</router-link>
+        <router-link to="" v-scroll-to="'#skills'" class="router-link">
+          {{ path ? 'Skills' : 'Навыки' }}
+        </router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="" v-scroll-to="'#portfolio'" class="router-link">Portfolio</router-link>
+        <router-link to="" v-scroll-to="'#portfolio'" class="router-link">
+          {{
+            path ? 'Portfolio' : 'Портфолио'
+          }}
+        </router-link>
       </li>
       <li class="b-navigation__list">
-        <router-link to="" v-scroll-to="'#footer'" class="router-link">Contacts</router-link>
+        <router-link to="" v-scroll-to="'#footer'" class="router-link">{{
+            path ? 'Contacts' : 'Контакты'
+          }}
+        </router-link>
       </li>
     </ul>
   </nav>
@@ -22,7 +35,19 @@
 
 <script>
 export default {
-  name: "Navigation"
+  name: "Navigation",
+  data() {
+    return {
+      path: this.$route.path === '/',
+      nav: [
+        'Home',
+        'About me',
+        'Skills',
+        'Portfolio',
+        'Contacts'
+      ]
+    }
+  }
 }
 </script>
 

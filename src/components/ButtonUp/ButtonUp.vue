@@ -1,0 +1,45 @@
+<template>
+  <router-link to="" v-scroll-to="'#header'" class="router-link" id="fadeButton">
+    <i class="far fa-arrow-alt-circle-up"></i>
+  </router-link>
+</template>
+
+<script>
+import $ from "jquery";
+
+export default {
+  name: "ButtonUp",
+
+  mounted() {
+    this.fadeBtn()
+  },
+
+  methods: {
+    fadeBtn() {
+      $(window).scroll(function () {
+        // Если отступ сверху больше 50px то показываем кнопку "Наверх"
+        if ($(this).scrollTop() > 100) {
+          $('#fadeButton').fadeIn();
+        } else {
+          $('#fadeButton').fadeOut();
+        }
+      });
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+#fadeButton {
+  position: fixed;
+  z-index: 1;
+  display: none;
+  top: 300px;
+  left: 35px;
+
+  i {
+    color: black;
+    font-size: 40px;
+  }
+}
+</style>

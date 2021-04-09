@@ -46,6 +46,28 @@ export default new Vuex.Store({
                 class: 'fab fa-github-square',
                 link: 'https://github.com/evsik'
             }
+        ],
+        nav: [
+            {
+                title: 'Home',
+                id: "'#header'"
+            },
+            {
+                title: 'About me',
+                id: "'#aboutMe'"
+            },
+            {
+                title: 'Skills',
+                id: "'#skills'"
+            },
+            {
+                title: 'Portfolio',
+                id: "'#portfolio'"
+            },
+            {
+                title: 'Contacts',
+                id: "'#footer'"
+            }
         ]
     },
     mutations: {
