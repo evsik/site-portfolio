@@ -36,6 +36,7 @@ export default {
   @include media-breakpoint-down(xs) {
     grid-area: 2/1;
     text-align: left;
+    grid-column: 1/3;
   }
 }
 </style>
