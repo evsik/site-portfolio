@@ -30,6 +30,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+
 #fadeButton {
   position: fixed;
   z-index: 1;
@@ -40,6 +43,16 @@ export default {
   i {
     color: black;
     font-size: 40px;
+
+    @include media-breakpoint-down(sm) {
+      color: #00000061;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    bottom: 10px;
+    top: auto;
+    left: calc(50% - 15px);
   }
 }
 </style>

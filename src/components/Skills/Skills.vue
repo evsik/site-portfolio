@@ -92,6 +92,16 @@ export default {
   }
 }
 
+.slick-prev {
+  left: 0 !important;
+  z-index: 2;
+}
+
+.slick-next {
+  right: 4px !important;
+  z-index: 2;
+}
+
 .slick-prev:before, .slick-next:before {
   color: #070707 !important;
   font-size: 40px !important;
