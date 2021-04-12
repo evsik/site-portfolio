@@ -14,6 +14,14 @@
             :key="item.id_skills"
         />
       </div>
+      <!--      BLock for phone size-->
+      <div class="b-skillsBlock_phone autoplay">
+        <Item
+            v-for="item of this.$store.state.dataArr"
+            :item="item"
+            :key="item.id_skills"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +34,7 @@ export default {
   name: "Skills",
   data() {
     return {
+      mQuery: window.matchMedia('(max-width: 565px)'),
       path: this.$route.path === '/',
       text: `
          I use a stack of technologies such as:
@@ -42,15 +51,47 @@ export default {
   },
   mounted() {
     this.$store.commit('getData')
+    //При отрисовке сайта запуск слушателя на изменение размеров экрана
+    this.mQuery.addListener(this.handleMobilePhoneResize)
   },
   updated() {
-    $('.multiple-items').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4
-    });
+    this.carouselForPhone()
+    this.carouselForDesk()
+    //Проверка при запуске сайта с какого устройста вход
+    this.changingBlock(this.mQuery)
   },
-  methods: {}
+  methods: {
+    carouselForPhone() {
+      $('.autoplay').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      })
+    },
+    carouselForDesk() {
+      $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+      });
+    },
+    handleMobilePhoneResize(e) {
+      this.changingBlock(e)
+    },
+    //Метод на проверку размеров экрана
+    changingBlock(e) {
+      if (e.matches) {
+        document.querySelector('.b-skillsBlock').style.display = 'none'
+        document.querySelector('.b-skillsBlock_phone').style.display = 'block'
+        // this.carouselForPhone()
+      } else {
+        document.querySelector('.b-skillsBlock').style.display = 'block'
+        document.querySelector('.b-skillsBlock_phone').style.display = 'none'
+        // this.carouselForDesk()
+      }
+    }
+  }
 }
 </script>
 
@@ -79,6 +120,11 @@ export default {
       display: flex;
       justify-content: space-between;
 
+    }
+
+    .b-skillsBlock_phone {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
