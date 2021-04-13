@@ -3,8 +3,7 @@
     <div class="b-work__img">
       <img :src="item.screen" alt="#">
     </div>
-    <a :href="item.workLink" class="b-work__link" @click="isActive = true"
-       :class="{ trackingOutExpand: isActive }">
+    <a :href="item.workLink" class="b-work__link">
       {{ item.title }}
     </a>
   </div>
@@ -16,7 +15,6 @@ export default {
 
   data() {
     return {
-      isActive: false,
     }
   },
   props: {
@@ -51,36 +49,4 @@ export default {
     }
   }
 }
-
-.trackingOutExpand {
-  -webkit-animation: trackingOutExpand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: trackingOutExpand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes trackingOutExpand {
-  0% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  100% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-}
-
-@keyframes trackingOutExpand {
-  0% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  100% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-}
-
 </style>

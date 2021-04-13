@@ -12,8 +12,7 @@
             :item="item"
         />
       </div>
-      <a href="https://github.com/evsik" class="b-moreLink" @click="isActiveMore = true"
-         :class="{ trackingOutExpand: isActiveMore }" v-html="path ? text : textRu">
+      <a href="https://github.com/evsik" class="b-moreLink" v-html="path ? text : textRu">
         MORE
       </a>
     </div>
