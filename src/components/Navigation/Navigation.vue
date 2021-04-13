@@ -1,8 +1,8 @@
 <template>
   <nav class="b-navigation">
     <ul>
-      <li class="b-navigation__list">
-        <router-link to="" v-scroll-to="'#header'" class="router-link">
+      <li class="b-navigation__list" @click="$store.state.activeMenu = !$store.state.activeMenu">
+        <router-link to="" v-scroll-to="'#header'" class="router-link" id="navigation__list">
           {{ path ? 'Home' : 'Главная' }}
         </router-link>
       </li>
@@ -78,6 +78,15 @@ export default {
           color: black;
         }
       }
+
+      @include media-breakpoint-down(xs) {
+        padding: 10px;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

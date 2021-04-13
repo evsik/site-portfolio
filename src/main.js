@@ -6,17 +6,20 @@ import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
 import VueScrollTo from 'vue-scrollto'
 import Slick from 'vue-slick';
 import FontAwesome from '@fortawesome/fontawesome-free'
+// import Popper from "popper.js";
 
 Vue.use(VueScrollTo)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Slick)
 Vue.use(FontAwesome)
+// Vue.use(Popper)
 
 Vue.config.productionTip = false
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

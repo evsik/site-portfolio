@@ -35,7 +35,7 @@ export default {
 
 #fadeButton {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   display: none;
   top: 300px;
   left: 35px;

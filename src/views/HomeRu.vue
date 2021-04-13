@@ -1,16 +1,14 @@
 <template>
-  <v-content>
+  <div>
     <Header id="header"/>
-    <Slider id="slider"/>
-    <AboutMe id="aboutMe"/>
-    <Skills id="skills"/>
-    <Portfolio id="portfolio"/>
-    <Footer id="footer"/>
-
-
-    <!--    <SectionTwo id="section-two"/>-->
-    <!--    <SectionThree id="section-three"/>-->
-  </v-content>
+    <main>
+      <Slider id="slider"/>
+      <AboutMe id="aboutMe"/>
+      <Skills id="skills"/>
+      <Portfolio id="portfolio"/>
+      <Footer id="footer"/>
+    </main>
+  </div>
 </template>
 
 <script>

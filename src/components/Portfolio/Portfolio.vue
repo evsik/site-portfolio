@@ -25,8 +25,6 @@ import Item from "./Item";
 
 export default {
   name: "Portfolio",
-
-
   components: {
     Item
   },
@@ -39,8 +37,7 @@ export default {
       text: `MORE`,
       textRu: `БОЛЬШЕ РАБОТ`,
     }
-  },
-  methods: {}
+  }
 }
 </script>
 

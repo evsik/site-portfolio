@@ -57,6 +57,7 @@ export default {
 
   @include media-breakpoint-down(xs) {
     grid-area: 2/2;
+
   }
 }
 </style>

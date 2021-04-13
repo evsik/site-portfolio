@@ -8,7 +8,7 @@
         <p class="b-footer__text" v-html="path ? text : textRu">
 
         </p>
-        <Button></Button>
+        <MailMeBtn></MailMeBtn>
       </div>
       <div class="b-socialBlock">
         <Social
@@ -24,13 +24,13 @@
 </template>
 
 <script>
-import Button from "./Button";
-import Social from "./Social";
+import MailMeBtn from "./MailMeBtn";
+import Social from "../Socials/Social";
 
 export default {
   name: "Footer",
   components: {
-    Button,
+    MailMeBtn,
     Social
   },
   data() {

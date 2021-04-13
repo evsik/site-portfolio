@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
+        activeMenu: false,
         dataArr: [],
         dataUrl: 'https://raw.githubusercontent.com/evsik/site-portfolio/master/src/assets/skills.json',
         works: [

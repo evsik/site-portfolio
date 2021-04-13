@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "Button",
+  name: "MailMeBtn",
   data() {
     return {
       path: this.$route.path === '/',
